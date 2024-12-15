@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+/* Style pour le texte "ENSEMBLE" */
+.header-text {
+    position: absolute;
+    top: 8px; /* Ajuste la distance par rapport au haut */
+    left: -78%; /* Ajuste la distance par rapport à la gauche */
+    color: purple; /* Couleur violette */
+    font-size: 2.5rem; /* Taille du texte */
+    font-weight: bold; /* Rendre le texte gras */
+    font-family: 'Poppins', sans-serif; /* Police de caractère */
+    text-transform: uppercase; /* Met en majuscules */
+    z-index: 2; /* Assure que le texte est au-dessus de l'image */
+    }
+    
+    /* Header Styles */
+    
+    
+    nav{
+      display: flex;
+      padding: 15px 200px;
+      justify-content:  space-between;
+      align-items: center;
+      height: 60px;
+      bottom: 80px;
+      top: 10px;
+      right: 8px;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+    }
+    
+    
+    .nav-links{
+      flex: 1;
+      text-align: right;
+    }
+    
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+      top: 0;
+     right: -30%;
+    }
+    .nav-links ul li a{
+      color: rgb(180, 84, 180);
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: purple;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+    
+    .nav-links ul li:hover::after{
+      width: 100%;
+    
+    }
+    
+    nav .fa{
+      display: none;
+    }
+    
+    
+    @media ( max-width: 405px){
+      .nav-links ul li{
+        display: block;
+      }
+    
+      .nav-links {
+        position: absolute;
+        background: white;
+        height: 100vh;
+        width: 180px;
+        top: 0;
+        right: -210px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+      
+      }
+      .header-text {
+        left: 9%;
+        font-size: 2rem;
+      }
+    nav .fa{
+      display: block;
+      color: purple;
+      margin: 10px;
+      font-size: 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1;
+      }
+      .nav-links ul {
+          padding: 30px;
+      }
+    }
+    
+    
+    
+    
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f8f6fd;
+      color: #333;
+    }
+/* contact */
+.comment-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .comment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .comment-content {
+    max-width: 70%;
+  }
+  
+  .comment-author {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .comment-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .comment-avatar {
+    flex-shrink: 0;
+    margin-left: 15px;
+  }
+  
+  .comment-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(107, 15, 188, 0.3);
+  }
+  
+  /*temoignages*/
+  /* Section globale */
+  .testimonials-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 4px;
+    background-color: rgba(176, 136, 217, 0.5); 
+    margin: 0 auto 2rem auto;
+    border-radius: 2px;
+  
+  }
+  
+  
+
+  /* Formulaire Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  form input[type="text"], form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+  
+  form textarea {
+    min-height: 120px;
+  }
+  
+  form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  form button:active {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 700px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    #contact-section {
+      padding: 20px;
+      margin-top: 0;
+    }
+  
+    form {
+      padding: 10px;
+    }
+  
+    form input[type="text"], form textarea {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Section Contact */
+  #contact-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 90px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    animation: fadeInUp 1.2s ease-out;
+  }
+  #contact-section1 {
+    background-color: plum;
+    padding-top: 100px;
+    padding-left:200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 350px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    animation: fadeInUp 1.2s ease-out;
+   
+  }
+  
+  #contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #contact-section .underline {
+    margin: 10px auto;
+    width: 100px;
+    height: 4px;
+    background-color: #4CAF50;
+  }
+  
+ 
+  /* Carte de localisation */
+  .map-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  /* Formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  form input[type="text"],
+  form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  form textarea {
+    min-height: 120px;
+  }
+  
+  form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  form button:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 7px;
+    background-color: rgb(180, 84, 180);
+    color: #ffffff;
+    font-size: 0.6rem;
+    margin-bottom: 1px;
+  }

@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Style pour le texte "ENSEMBLE" */
+.header-text {
+position: absolute;
+top: 8px; /* Ajuste la distance par rapport au haut */
+left: -83%; /* Ajuste la distance par rapport à la gauche */
+color: purple; /* Couleur violette */
+font-size: 2.5rem; /* Taille du texte */
+font-weight: bold; /* Rendre le texte gras */
+font-family: 'Poppins', sans-serif; /* Police de caractère */
+text-transform: uppercase; /* Met en majuscules */
+z-index: 2; /* Assure que le texte est au-dessus de l'image */
+}
+
+/* Header Styles */
+
+.header {
+ min-height: 100vh;
+ width: 100%;
+ background-image: linear-gradient(rgba(4,9,10,0,7), rgba(4,9,10,0,7)),url("C:\Users\LYS BLEU\Html\Projet-culturel\Ressources\pexels-rethaferguson-3810832.jpg");
+ background-position: center;
+ background-size: cover;
+ position: relative;
+ overflow: hidden;
+}
+nav{
+  display: flex;
+  padding: 15px 200px;
+  justify-content:  space-between;
+  align-items: center;
+  height: 60px;
+  bottom: 80px;
+  top: 10px;
+  right: 8px;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+}
+
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+ right: -30%;
+}
+.nav-links ul li a{
+  color: rgb(180, 84, 180);
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: purple;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+
+}
+
+nav .fa{
+  display: none;
+}
+
+
+@media ( max-width: 405px){
+  .nav-links ul li{
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: white;
+    height: 100vh;
+    width: 180px;
+    top: 0;
+    right: -210px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  
+  }
+  .header-text {
+    left: 9%;
+    font-size: 2rem;
+  }
+nav .fa{
+  display: block;
+  color: purple;
+  margin: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  }
+  .nav-links ul {
+      padding: 30px;
+  }
+}
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f6fd;
+  color: #333;
+}
+
+/* Menu */
+.menu {
+  background-color: #d8b4f2;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #6b0fbc;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+section .principale {
+  margin-top: 100px; /* Espace sous le menu */
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgb(180, 84, 180);
+  color: #fff;
+}
+
+section .principale h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+section .principale p {
+  font-size: 1.2rem;
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness for stats-section on screens <= 403px */
+@media (max-width: 403px) {
+  .stats-section {
+    display: flex;
+    flex-direction: column; /* Organiser les éléments en colonne */
+    align-items: center; /* Centrer les éléments */
+    justify-content: center; /* Centrer les éléments sur l'axe principal */
+    gap: 2rem; /* Espacement entre les éléments */
+    padding: 20px; /* Ajouter du padding pour une meilleure lisibilité */
+  }
+
+  .stat {
+    width: 80%; /* Utiliser 80% de la largeur du conteneur */
+    text-align: center; /* Centrer le texte dans chaque statistique */
+  }
+
+  .stat h2 {
+    font-size: 1.8rem; /* Ajuster la taille du texte pour un écran plus petit */
+  }
+
+  .stat p {
+    font-size: 1rem; /* Réduire la taille de la police des paragraphes */
+  }
+}
+
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 2rem;
+  color: rgb(180, 84, 180);
+}
+
+/*.underline {
+  width: 50px;
+  height: 5px;
+  background-color: rgba(107, 15, 188, 0.3);
+  margin: 10px auto;
+  border-radius: 3px;
+}*/
+
+.stat p {
+  font-size: 1rem;
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(180, 84, 180);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 403px) {
+  .stats-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat {
+    margin-bottom: 20px;
+  }
+}
+
+/* Section 2 Styling */
+
+.content-section {
+  padding: 2rem;
+  background-color: #f8f5fc;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 1350px;
+}
+
+.content-section h2 {
+  color: violet; /* Violet clair */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.content-section .underline {
+  width: 50px;
+  height: 4px;
+  background-color: rgba(176, 136, 217, 0.5); /* Transparent */
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+/* Styling for the violence categories */
+.violence-categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.category-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 22%; /* Ajustez pour les écrans plus petits */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-item h3 {
+  color: #B088D9; /* Violet clair */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.category-item p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 405px) {
+  .violence-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-item {
+    width: 80%; /* Utilisation de la largeur complète sur les petits écrans */
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Section 3 Styling */
+.content-section {
+  padding: 2rem;
+  background-color: #f8f5fc;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-section h2 {
+  color: #B088D9; /* Violet clair */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.content-section .underline {
+  width: 50px;
+  height: 4px;
+  background-color: rgba(176, 136, 217, 0.5); /* Transparent */
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+/* Support Container */
+.support-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.support-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%; /* Ajustez selon le besoin */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.support-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.support-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.support-image:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Titles and Text */
+.support-item h3 {
+  color: #B088D9; /* Violet clair */
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.support-item p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.participation-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: rgba(107, 15, 188, 0.3);
+  margin: 10px auto 20px auto;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.participation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.participation-item {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.participation-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.participation-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.participation-item i {
+  font-size: 1.5rem;
+  color: #6b0fbc;
+  margin-bottom: 8px;
+}
+
+.participation-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.call-to-action {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  color: #444;
+}
+
+/* Responsiveness for support-container on screens <= 403px */
+@media (max-width: 405px) {
+  .support-container {
+    display: flex;
+    flex-direction: column; /* Organiser les éléments en colonne */
+    align-items: center; /* Centrer les éléments */
+    justify-content: center; /* Centrer les éléments sur l'axe principal */
+    gap: 1rem; /* Espacement entre les éléments */
+  }
+
+  .support-item {
+    width: 90%; /* Utiliser 90% de la largeur disponible */
+    margin-bottom: 1rem; /* Espacement entre les éléments */
+  }
+
+  .support-image {
+    width: 100%; /* Adapter l'image à la largeur de son conteneur */
+    height: auto; /* Maintenir les proportions de l'image */
+    margin-bottom: 1rem; /* Espacement entre l'image et le texte */
+  }
+
+  .support-item h3 {
+    font-size: 1.3rem; /* Ajuster la taille du titre */
+  }
+
+  .support-item p {
+    font-size: 0.9rem; /* Ajuster la taille du texte pour les petits écrans */
+  }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Lutte contre les violences faites aux femmes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/footer.css">
+
+</head>
+<body>
+ 
+   
+  
+      <section class="header">
+        <img class="img-slider" src="Ressources/pexels-rethaferguson-3810832.jpg" alt="Une image">
+        <nav>
+          <div class="header-text">ENSEMBLE</div>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html#t1">A propos</a></a></li>
+              <li><a href="Html/ressourcespage.html">Ressources</a></a></li>
+              <li><a href="Html/agir.html">Agir et s'engager</a></li>
+              <li><a href="Html/Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+     
+
+<div class="text-box">
+  <h1>Stop Aux Violences Faites Aux Femmes : <br>Agissons ensemble !</h1>
+  <p>"Les violences faites aux femmes touchent des millions de vies chaque année. Ce site a pour mission de sensibiliser, informer et agir. <br> Ensemble,
+     nous pouvons faire la différence."</p>
+     <a href="Html/agir.html"class="hero-btn">Consulte notre page pour plus d'informations</a>
+</div>
+
+        </section>
+
+<!----------a propos---------->
+<section class="course">
+  <a name ="t1"><h1>Pourquoi Sensibiliser ?</h1></a>
+  <p>“Chaque année, des millions de femmes subissent des violences, qu’elles soient physiques, psychologiques, économiques ou sexuelles. <br> Ce site vise à briser le silence et à encourager l’action collective.”</p>
+
+
+<div class="row">
+  <div class="course-col">
+    <h2>Objectifs:</h2>
+    <p>• “Informer, prévenir et soutenir. Nous croyons qu’en sensibilisant les communautés, en éduquant les générations futures et en apportant un soutien aux victimes, nous pouvons bâtir un monde sans violence.” </p>
+  </div>
+  <div class="course-col">
+    <h2>Impact:</h2>
+    <p>• “Les violences ont des conséquences graves sur la santé mentale et physique des victimes, mais aussi sur leurs enfants et leur entourage.” </p>
+  </div>
+  <div class="course-col">
+    <h2>Témoignages:</h2>
+    <p>• “Les témoignages sont une arme puissante pour briser le silence et sensibiliser à la réalité des violences subies.”</p>
+  </div>
+</div>
+
+</section>
+
+
+
+
+<!----------javaScript for Toggle menu---------->
+
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+<footer>
+  <p>&copy; 2024 Ensemble. Tous droits réservés.</p>
+</footer>
+
+
+  
+    
+</body>
+</html>

@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Style pour le texte "ENSEMBLE" */
+  .header-text {
+  position: absolute;
+  top: 8px; /* Ajuste la distance par rapport au haut */
+  left: -83%; /* Ajuste la distance par rapport à la gauche */
+  color: purple; /* Couleur violette */
+  font-size: 2.5rem; /* Taille du texte */
+  font-weight: bold; /* Rendre le texte gras */
+  font-family: 'Poppins', sans-serif; /* Police de caractère */
+  text-transform: uppercase; /* Met en majuscules */
+  z-index: 2; /* Assure que le texte est au-dessus de l'image */
+  }
+  
+  /* Header Styles */
+  
+  .header {
+   min-height: 10vh;
+   width: 100%;
+   background-position: center;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   overflow: hidden;
+  }
+  nav{
+    display: flex;
+    padding: 15px 200px;
+    justify-content:  space-between;
+    align-items: center;
+    height: 60px;
+    bottom: 80px;
+    top: 10px;
+    right: 8px;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+  }
+  
+  
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    top: 0;
+   right: -30%;
+  }
+  .nav-links ul li a{
+    color: rgb(180, 84, 180);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after{
+    width: 100%;
+  
+  }
+  
+  nav .fa{
+    display: none;
+  }
+  
+  
+  @media (max-width: 405px) {
+    .nav-links {
+      position: fixed; /* Fixe le menu pour qu'il reste visible même en scrollant */
+      background: white;
+      height: 100vh; /* Prenez toute la hauteur de l'écran */
+      width: 200px; /* Ajustez la largeur selon vos besoins */
+      top: 0;
+      right: -200px; /* Position initiale hors de l'écran */
+      text-align: left;
+      z-index: 2;
+      transition: right 0.5s ease; /* Transition fluide pour le menu */
+    }
+  
+    .nav-links ul {
+      padding: 30px;
+    }
+  
+    .nav-links ul li {
+      display: block;
+      padding: 15px 0; /* Ajout d'espacement entre les éléments */
+    }
+  
+    nav .fa {
+      display: block;
+      color: purple;
+      font-size: 10px;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+    }
+  
+    .header-text {
+      left: 9%;
+      font-size: 1.8rem; /* Taille ajustée pour petits écrans */
+    }
+  }
+  
+  
+  
+  
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f6fd;
+    color: #333;
+  }
+
+/* Style global de la section Ressources */
+#resources {
+    margin-bottom: 400px;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  #resources h2 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #333;
+  }
+  
+  #resources .underline {
+    width: 80px;
+    height: 4px;
+    background-color: rgb(180, 84, 180);
+    margin: 10px auto 30px;
+  }
+  
+  .resource-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .resource-section h3 {
+    font-size: 1.8em;
+    color: rgb(180, 84, 180);
+    margin-bottom: 15px;
+  }
+  
+  .resource-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resource-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .resource-section ul li a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resource-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .resource-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .resource-section .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(180, 84, 180);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resource-section .btn:hover {
+    background-color: rgb(180, 84, 180);
+  }
+  
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(180, 84, 180);
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
